@@ -1,6 +1,6 @@
 # Proyek Django: Roemi
 
-Proyek ini adalah contoh implementasi CRUD (Create, Read, Update, Delete) menggunakan **Django** untuk entitas `Individu`.  
+Contoh implementasi CRUD (Create, Read, Update, Delete) menggunakan **Django** untuk entitas `Individu`.  
 Struktur ini bisa dengan mudah diduplikasi untuk entitas lain seperti **Lembaga**, **Event**, atau **Panitia**.
 
 ---
