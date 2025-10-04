@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daftar Individu</title>
+</head>
+<body>
+  <h1>Daftar Individu</h1>
+  <a href="{% url 'individu_create' %}">Tambah Individu</a>
+  <ul>
+    {% for obj in daftar_individu %}
+      <li>
+        <a href="{% url 'individu_detail' obj.pk %}">{{ obj }}</a>
+        [<a href="{% url 'individu_update' obj.pk %}">Edit</a>]
+        [<a href="{% url 'individu_delete' obj.pk %}">Hapus</a>]
+      </li>
+    {% empty %}
+      <li>Belum ada data individu.</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

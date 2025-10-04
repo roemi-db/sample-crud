@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Individu</title>
+</head>
+<body>
+  <h1>Form Individu</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Simpan</button>
+  </form>
+  <a href="{% url 'individu_list' %}">Batal</a>
+</body>
+</html>

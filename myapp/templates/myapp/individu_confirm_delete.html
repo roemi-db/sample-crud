@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hapus Individu</title>
+</head>
+<body>
+  <h1>Hapus {{ object }}?</h1>
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">Ya, hapus</button>
+  </form>
+  <a href="{% url 'individu_list' %}">Batal</a>
+</body>
+</html>

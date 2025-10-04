@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Detail Individu</title>
+</head>
+<body>
+  <h1>{{ object }}</h1>
+  <p>Email: {{ object.email }}</p>
+  <p>Kota: {{ object.kota }}</p>
+  <p>Gender: {{ object.get_gender_display }}</p>
+  <p>Tahun Engagement: {{ object.tahun_engagement }}</p>
+  <p>Consent: {{ object.consent_publish }}</p>
+
+  <a href="{% url 'individu_update' object.pk %}">Edit</a> |
+  <a href="{% url 'individu_delete' object.pk %}">Hapus</a> |
+  <a href="{% url 'individu_list' %}">Kembali</a>
+</body>
+</html>
